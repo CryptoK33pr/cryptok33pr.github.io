@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NFT Driven Experience - Blockchain Innovation Lab</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
     <header>
@@ -21,14 +21,20 @@
     <main>
         <!-- Hero Section -->
         <section id="nft-hero">
-            <video autoplay muted loop playsinline id="nft-hero-video">
-                <source src="Images/NFTDrivenExperiences/NFTVideo2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <!-- Embedded YouTube Video -->
+            <div id="nft-hero-video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe 
+                    src="https://www.youtube.com/embed/i6sIGayZEVc?autoplay=1&mute=1&loop=1&playlist=YOUR_HERO_VIDEO_ID&controls=0&modestbranding=1&rel=0" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+            </div>
             <div class="nft-hero-content">
                 <h1>NFT-Driven Experiences</h1>
                 <p>
-                    "More than just digital collectables, NFTs are movements, fandom, cultural expressions,<br>
+                    "More than just digital collectables, NFTs are movements, fandom, cultural expressions,<br />
                     and&nbsp;in-real&nbsp;life&nbsp;experiences"
                 </p>
             </div>
@@ -36,83 +42,27 @@
 
         <!-- Content Section -->
         <section id="nft-content">
-            <div class="nft-content-container">
-                <h2>Empower Your Audience Through Creativity and Ownership</h2>
-                <p>
-                    Each NFT is a distinct virtual collectible, individually numbered to ensure its uniqueness and specific value.
-                    Powered by smart contracts with built-in authentication and other customizations, these digital assets provide undeniable proof of ownership, with additional functionality enhancing their appeal.
-                </p>
-                <h3>Why NFTs?</h3>
-                <p>
-                    NFTs offer exciting opportunities for real-world redeemable benefits, bridging the gap between the digital and physical realms and driving deeper engagement with your brand.
-                </p>
-                <!-- Add more content here about NFT creation, buying/selling, etc. -->
-            </div>
+            <!-- Your existing content here -->
         </section>
 
         <!-- Features Section (Two Columns) -->
         <section id="nft-features">
-    <div class="nft-features-container">
-        <h2 class="nft-features-title">NFT Utility</h2>
-        <div class="feature-content">
-            <!-- Left Column: Video -->
-            <div class="feature-image">
-                <video autoplay muted loop playsinline poster="video-poster.jpg">
-                    <source src="Images/NFTDrivenExperiences/BIL NFT Card.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            <div class="nft-features-container">
+                <h2 class="nft-features-title">NFT Utility</h2>
+                <div class="feature-content">
+                    <!-- Left Column: Embedded YouTube Video -->
+                    <div class="feature-image" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe 
+                            src="https://www.youtube.com/embed/YOUR_FEATURE_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_FEATURE_VIDEO_ID&controls=0&modestbranding=1&rel=0" 
+                            frameborder="0" 
+                            allow="autoplay; encrypted-media" 
+                            allowfullscreen 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                        </iframe>
+                    </div>
                     <!-- Right Column: Feature List -->
                     <ul class="feature-list">
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/Para2.png" alt="Access Icon">
-                            <div class="feature-text">
-                                <h3>Authentication</h3>
-                                <p>NFTs can serve as tamper-proof digital certificates of authenticity, providing secure and transparent verification of ownership for both digital and physical assets through blockchain technology.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/Para2.png" alt="Access Icon">
-                            <div class="feature-text">
-                                <h3>Access</h3>
-                                <p>Unlock exclusive content, events, memberships, or communities, bridging digital ownership with real-world experiences.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/Para2.png" alt="Airdrops Icon">
-                            <div class="feature-text">
-                                <h3>Airdrops</h3>
-                                <p>Receive additional tokens or NFTs as bonuses, incentivizing long-term holding and community participation.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/gifts.png" alt="Redemption Icon">
-                            <div class="feature-text">
-                                <h3>Redemption</h3>
-                                <p>Redeem NFTs for physical goods, services, or unique experiences, merging virtual and tangible value.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/rewards.png" alt="Rewards Icon">
-                            <div class="feature-text">
-                                <h3>Rewards</h3>
-                                <p>Earn benefits like discounts, loyalty points, or special privileges for holding or engaging with NFTs.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/Gaming.png" alt="Gaming Icon">
-                            <div class="feature-text">
-                                <h3>Gaming</h3>
-                                <p>Use NFTs as in-game assets, characters, or items, enhancing gameplay and enabling true digital ownership.</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <img src="Images/NFTDrivenExperiences/Icons/gov2.png" alt="Governance Icon">
-                            <div class="feature-text">
-                                <h3>Governance</h3>
-                                <p>Participate in decision-making processes within DAOs or projects, giving holders a voice in the community's future.</p>
-                            </div>
-                        </li>
+                        <!-- Your existing feature list items -->
                     </ul>
                 </div>
             </div>
@@ -120,20 +70,7 @@
 
         <!-- Second Content Section -->
         <section id="nft-content-second">
-            <div class="nft-content-container">
-                <h2>Have a Project in Mind? Let Talk!</h2>
-                <h3>NFT Smart Contract Development</h3>
-                <p>
-                    Suitable for clients who already have their creative concept and just need secure, efficient, and custom-built smart contracts tailored to their specific project needs.
-                </p>
-                <h3>Full Service NFT Project Development</h3>
-                <p>
-                    This comprehensive service includes the technical and creative aspects of NFT projects, offering a holistic approach to bringing digital assets to life in the blockchain ecosystem.
-                </p>
-                <p>
-                    <a href="mailto:info@blockchaininnovationlab.io">info@blockchaininnovationlab.io</a>
-                </p>
-            </div>
+            <!-- Your existing content -->
         </section>
     </main>
 
