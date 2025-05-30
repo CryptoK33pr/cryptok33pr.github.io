@@ -200,7 +200,7 @@ nav a {
    -------------------------------------------------------------------------- */
 
 #cryptomeetups {  /*Targeting the SECTION */
-    padding: 4rem 0;  /* Adjusted padding to be more standard */
+    padding: 12rem 0;  /* Adjusted padding to be more standard */
     background-color: #f9f9f9; /* Added a subtle background color */
     color: #333;
 }
