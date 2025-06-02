@@ -424,7 +424,7 @@ body.home nav a {
     padding: 10rem 0;
     background:
         linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.492)),
-        url('Images/NFTDrivenExperiences/Background3.png');
+        url('NFTpage/Background3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
