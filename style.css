@@ -1,0 +1,842 @@
+/* ==========================================================================
+   Table of Contents:
+   ==========================================================================
+
+   1.  Global Styles
+   2.  Typography
+   3.  Layout
+   4.  Header
+   5.  Navigation
+   6.  Home Page
+            6 Hero Section
+            6.1 About Section
+            6.2 Meetups Section
+   7.  NFT Driven Experience Page
+            7.1 NFT Hero Section
+            7.2 NFT Content Section One
+            7.3 NFT Content Section Two
+            7.4 NFT Content Section Three
+    8. Crypto Meet Ups Page
+            8.1 Hero Section
+            8.2 Content Section
+    9. About Page
+            9.1 About Hero Section
+            9.2 Content Section
+   10.  Components
+       10.1 Buttons (placeholder for future)
+   11.  Footer (placeholder for future)
+   12. Responsive Design
+*/
+
+
+/* ==========================================================================
+   1. Global Styles
+   ========================================================================== */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ==========================================================================
+   2. Typography
+   ========================================================================== */
+
+/* Add typography styles here (e.g., font sizes, heading styles) */
+
+/* ==========================================================================
+   3. Layout
+   ========================================================================== */
+
+/* Add layout styles here (e.g., container, grid) */
+
+/* ==========================================================================
+   4. Header
+   ========================================================================== */
+
+/* Default Header Style - Applies to all pages */
+header {
+    background-color: #000000;
+    color: #000000;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+/* Homepage-specific transparent header */
+body.home header {
+    background: transparent;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* ==========================================================================
+   5. Navigation
+   ========================================================================== */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Home page nav link color override */
+body.home nav a {
+    color: #000000; /* Or whatever you want for the homepage */
+}
+
+/* ==========================================================================
+   6. Home Page
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   6. Hero Section
+   -------------------------------------------------------------------------- */
+
+#hero {
+    padding: 15rem 0;
+    text-align: center;
+    min-height: 500px;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+        url('Images/HomePage/Blob.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #000000;
+    filter: brightness(0.9); /* Optional: darken video for text readability */
+}
+
+#hero::before {
+    content: overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    color: #000000;
+    font-size: 3rem;
+    line-height: 3;
+    margin-bottom: -3rem;
+}
+
+#hero h2 {
+    color: #111111;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+#hero p {
+    color: #111111;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Enhanced button styles */
+#hero .button {
+    background-color: #ff0066;  /* ✅ Button background */
+    color: #ffffff;             /* ✅ Button text color */
+    font-size: 1rem;            /* ✅ Font size */
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#hero .button:hover {
+    background-color: #cc0052;  /* ✅ Hover color */
+}
+
+/* ==========================================================================
+   6.1 About Section (with full styling control)
+   ========================================================================== */
+
+#about {
+    padding: 15rem 0;
+    background-color: #f9f9f9;     /* ✅ Editable background */
+    color: #000000;                /* ✅ Fallback text color */
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+}
+
+#about .about-text h2 {
+    color: #111111;                /* ✅ Editable heading color */
+    font-size: 1.5rem;               /* ✅ Editable heading font size */
+    margin-bottom: 1rem;
+}
+
+#about .about-text p {
+    color: #333333;                /* ✅ Editable paragraph color */
+    font-size: 1rem;           /* ✅ Editable paragraph font size */
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#about .button {
+    background-color: #ff0066;     /* ✅ Editable button background */
+    color: #ffffff;                /* ✅ Editable button text color */
+    font-size: 1rem;               /* ✅ Editable button font size */
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#about .button:hover {
+    background-color: #cc0052;     /* ✅ Editable hover color */
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* --------------------------------------------------------------------------
+   6.2 Meetups Section (Home Page)
+   -------------------------------------------------------------------------- */
+
+#cryptomeetups {
+    padding: 17rem 0;
+    background-color: #ffffff;  /* ✅ Easily editable background color */
+    color: #000000;             /* ✅ Easily editable default text color */
+}
+
+/* Targeting specific text styles within the Crypto Meetups section */
+#cryptomeetups h2 {
+    color: #000000;             /* ✅ Heading color */
+    font-size: 1.5rem;            /* ✅ Adjustable font size */
+    margin-bottom: 1rem;
+}
+
+#cryptomeetups p {
+    color: #000000;             /* ✅ Paragraph text color */
+    font-size: 1rem;        /* ✅ Adjustable font size */
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#cryptomeetups .button {
+    background-color: #ff0066;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#cryptomeetups .button:hover {
+    background-color: #cc0052;
+}
+
+#cryptomeetups .about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#cryptomeetups .about-text {
+    flex: 1;
+}
+
+#cryptomeetups .about-image {
+    flex: 1;
+    text-align: center;
+}
+
+#cryptomeetups .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* ==========================================================================
+   7. NFT Driven Experience Page
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+    7.1 NFT Page Hero
+   -------------------------------------------------------------------------- */
+
+#nft-hero {
+  position: relative;
+  padding: 21.5rem 0;
+  text-align: center;
+  background-color: #c4c4c4; /* fallback color */
+  overflow: hidden; /* to contain the video */
+}
+
+#nft-hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.4); /* Optional: darken video for text readability */
+}
+
+.nft-hero-content {
+  position: relative;
+  z-index: 1; /* above the video */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #fff; /* text color for contrast */
+}
+
+#nft-hero h1 {
+  font-size: 2.75rem;
+  color: #fff; /* white for better contrast */
+  margin-bottom: 1rem;
+}
+
+#nft-hero p {
+  font-size: 1rem;
+  color: #ddd; /* lighter text */
+}
+
+
+/* --------------------------------------------------------------------------
+    7.2 NFT Content Section One
+   -------------------------------------------------------------------------- */
+
+#nft-content {
+    padding: 21rem 0;
+    background:
+        linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249)),
+        url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+.nft-content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#nft-content h1 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    color: #000000;
+    text-align: left;
+}
+
+#nft-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #ff0066;
+    text-align: left;
+}
+#nft-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #000000;
+    text-align: left;
+}
+
+#nft-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+}
+
+
+/* --------------------------------------------------------------------------
+    7.3 NFT Content Section Two (Two Columns)
+   -------------------------------------------------------------------------- */
+
+#nft-features {
+    padding: 10rem 0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.492)),
+        url('Images/NFTDrivenExperiences/Background3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nft-features-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nft-features-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff0066;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.feature-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 2;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 0.75rem;
+}
+
+.feature-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 0%;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feature-text h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff0066;
+    margin: 0 0 0.3em 0;
+}
+
+.feature-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* --- Sticky Left Column --- */
+.feature-image {
+    flex: 1;
+    align-self: flex-start;
+    position: sticky;
+    top: 2rem; /* Adjust for desired distance from top of viewport */
+    aspect-ratio: 650 / 820; /* Portrait ratio for your video */
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    background: transparent;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .feature-content {
+        flex-direction: column;
+    }
+    .feature-image {
+        position: static; /* Disable sticky on mobile for better UX */
+        max-width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+    7.4 NFT Content Section Three
+   -------------------------------------------------------------------------- */
+
+#nft-content-second {
+    padding: 18rem 0;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.85), rgb(255, 255, 255)),
+        url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#nft-content-second .nft-content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#nft-content-second h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+}
+
+#nft-content-second h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 600;
+    text-align: left;
+}
+
+#nft-content-second p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.7;
+    text-align: left;
+}
+
+#nft-content-second a {
+    color: #0032e6;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+@media (max-width: 600px) {
+    #nft-content-second .nft-content-container {
+        padding: 0 8px;
+    }
+    #nft-content-second h2 {
+        font-size: 1.4rem;
+    }
+    #nft-content-second h3 {
+        font-size: 1.1rem;
+    }
+    #nft-content-second p {
+        font-size: 1rem;
+    }
+}
+
+/* ==========================================================================
+   8. Crypto Meet Ups Page
+   ========================================================================== */
+
+/* ==========================================================================
+   8.1 Crypto Meet Ups Hero Section
+   ========================================================================== */
+
+#crypto-hero {
+    background-color: #ffffff;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.crypto-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#crypto-hero h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+#crypto-hero p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   8.2 Crypto Meet Ups Content Section
+   ========================================================================== */
+#crypto-content {
+    padding: 3rem 0;
+    background-color: #000000;
+}
+
+.crypto-content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#crypto-content h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+#crypto-content p,
+#crypto-content ul {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+#crypto-content ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+#crypto-content li strong {
+    font-weight: bold;
+    color: #f337e3;
+}
+
+/* Responsive - no columns to stack, so only container width and padding are handled */
+@media (max-width: 800px) {
+    .crypto-content-container {
+        padding: 0 10px;
+    }
+}
+
+
+/* ==========================================================================
+   9. About Page
+   ========================================================================== */
+/* ==========================================================================
+   9.1 About Hero Section
+   ========================================================================== */
+#about-hero {
+    background-color: #ffffff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about-hero h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+#about-hero p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   9.2 About Content Section
+   ========================================================================== */
+#about-content {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.about-columns {
+    display: flex;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1 1 0;
+    color: #ffffff;
+}
+
+.about-image {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+}
+
+#about-content h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+#about-content p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (max-width: 800px) {
+    .about-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about-image, .about-text {
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
+/* ==========================================================================
+   10. Components
+   ========================================================================== */
+
+.button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #e93be3;
+    padding: 0.75rem 1.12rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* 👈 Add this line to control text size */
+    font-weight: 50; /* Optional: makes text bolder */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* ==========================================================================
+   11. Footer
+   ========================================================================== */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ==========================================================================
+   12. Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    display: block;
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+
+  nav a {
+    word-break: keep-all;
+  }
+}
