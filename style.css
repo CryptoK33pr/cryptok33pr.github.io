@@ -150,7 +150,7 @@ body.cryptomeetups nav a {
     min-height: 500px;
     background:
         linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
-        url('Images/HomePage/Blob.jpg');
+        url('HomePageImages/Blob.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
