@@ -430,7 +430,7 @@ nav li .dropdown-content li a:hover {
   position: relative;
   padding: 24rem 0;
   text-align: center;
-  background-color: #c4c4c4; /* fallback color */
+  background-color: #000000; /* fallback color */
   overflow: hidden; /* to contain the video */
 }
 
