@@ -5,6 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Meet Ups - Blockchain Innovation Lab</title>
     <link rel="stylesheet" href="/style.css">
+    <style>
+      /* Header and Navigation Styles */
+      header {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 2rem 0;
+        text-align: center;
+        width: 100%;
+        z-index: 100;
+        position: relative;
+      }
+      body.cryptomeetups header {
+        background: transparent;
+        color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      nav a {
+        color: #222222;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 6px 12px;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #0070f3;
+      }
+      nav li.dropdown {
+        position: relative;
+      }
+      nav li.dropdown .dropdown-title {
+        cursor: pointer;
+        padding: 6px 12px;
+        color: #000000;
+        white-space: nowrap;
+        user-select: none;
+      }
+      nav li .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #fff;
+        min-width: 180px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 0;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+      }
+      nav li.dropdown.open .dropdown-content,
+      nav li.dropdown:hover .dropdown-content {
+        display: block;
+      }
+      nav li .dropdown-content li {
+        margin: 0;
+      }
+      nav li .dropdown-content li a {
+        display: block;
+        padding: 8px 16px;
+        color: #333;
+        text-decoration: none;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      nav li .dropdown-content li a:hover {
+        background: #f0f0f0;
+      }
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        header {
+          padding: 1rem 0;
+        }
+      }
+    </style>
+    <script>
+      // Dropdown: enable on touch/click for touch devices
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownTitle = document.querySelector('.dropdown-title');
+        var dropdown = document.querySelector('.dropdown');
+        if (dropdownTitle && dropdown) {
+          dropdownTitle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('open');
+          });
+          // Close dropdown when clicking outside
+          document.addEventListener('click', function () {
+            dropdown.classList.remove('open');
+          });
+          // Prevent closing when clicking inside dropdown
+          var dropdownContent = dropdown.querySelector('.dropdown-content');
+          if (dropdownContent) {
+            dropdownContent.addEventListener('click', function (e) {
+              e.stopPropagation();
+            });
+          }
+        }
+      });
+    </script>
 </head>
 <body class="cryptomeetups">
     <header>
@@ -15,7 +130,7 @@
                 <li class="dropdown">
                     <span class="dropdown-title">Projects</span>
                     <ul class="dropdown-content">
-                    <li><a href="paymentapp/index.html">Payment App</a></li>
+                        <li><a href="paymentapp/index.html">Payment App</a></li>
                     </ul>
                 </li>
                 <li><a href="cryptomeetups.html">Crypto Meet Ups</a></li>
@@ -26,36 +141,35 @@
 
     <main>
         <!-- Hero Section -->
-<section id="crypto-hero">
-    <div class="crypto-hero-content">
-        <h1>Crypto Meet Ups</h1>
-        <p>
-            Let's Meet Up! We hold monthly crypto networking events to support education and community in Jersey City.
-        </p>
-    </div>
-</section>
+        <section id="crypto-hero">
+            <div class="crypto-hero-content">
+                <h1>Crypto Meet Ups</h1>
+                <p>
+                    Let's Meet Up! We hold monthly crypto networking events to support education and community in Jersey City.
+                </p>
+            </div>
+        </section>
 
-<!-- Main Content Section -->
-<section id="crypto-content">
-    <div class="crypto-content-container">
-        <h2></h2>
-        <p>
-            Whether you're a business, entrepreneur, developer, coder, artist or just curious about the power of decentralized technology, our community is here to help you explore, innovate, and thrive.
-            Dive into resources, collaborate with experts, and join the movement reshaping industries and building the future.
-        </p>
+        <!-- Main Content Section -->
+        <section id="crypto-content">
+            <div class="crypto-content-container">
+                <h2></h2>
+                <p>
+                    Whether you're a business, entrepreneur, developer, coder, artist or just curious about the power of decentralized technology, our community is here to help you explore, innovate, and thrive.
+                    Dive into resources, collaborate with experts, and join the movement reshaping industries and building the future.
+                </p>
 
-        <h2>Why This Group?</h2>
-        <p>
-            Regular monthly meetings help to support connections that turn into relationships, ideas into innovations, and collaborations into transformative impact. Come and experience passionate people, purposeful introductions, and unexpected opportunities.
-        </p>
-        <ul>
-            <li><strong>Exposure:</strong> Blockchain, Cryptocurrency, and AI are now the most talked about innovations that are transforming society.</li>
-            <li><strong>Education:</strong> Learn about Blockchain, Cryptocurrency, NFT's, Wallets, DeFi, dApps, Smart Contracts and more...</li>
-            <li><strong>Engagement:</strong> Meet people with diverse skills, knowledge and make IRL (in real-life) connections.</li>
-        </ul>
-        <h2>Current Meet Ups</h2>
-        <p>loading. . . .</p>
-                <!-- Add more content here about your team members, achievements, etc. -->
+                <h2>Why This Group?</h2>
+                <p>
+                    Regular monthly meetings help to support connections that turn into relationships, ideas into innovations, and collaborations into transformative impact. Come and experience passionate people, purposeful introductions, and unexpected opportunities.
+                </p>
+                <ul>
+                    <li><strong>Exposure:</strong> Blockchain, Cryptocurrency, and AI are now the most talked about innovations that are transforming society.</li>
+                    <li><strong>Education:</strong> Learn about Blockchain, Cryptocurrency, NFT's, Wallets, DeFi, dApps, Smart Contracts and more...</li>
+                    <li><strong>Engagement:</strong> Meet people with diverse skills, knowledge and make IRL (in real-life) connections.</li>
+                </ul>
+                <h2>Current Meet Ups</h2>
+                <p>loading. . . .</p>
             </div>
         </section>
     </main>
