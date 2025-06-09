@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Driven Experience - Blockchain Innovation Lab</title>
     <link rel="stylesheet" href="/style.css">
+    <script>
+      // Enable dropdown on touch/click for touch devices
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownTitle = document.querySelector('.dropdown-title');
+        var dropdown = document.querySelector('.dropdown');
+        if (dropdownTitle && dropdown) {
+          dropdownTitle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('open');
+          });
+          // Close dropdown when clicking outside
+          document.addEventListener('click', function () {
+            dropdown.classList.remove('open');
+          });
+          // Prevent closing when clicking inside dropdown
+          var dropdownContent = dropdown.querySelector('.dropdown-content');
+          if (dropdownContent) {
+            dropdownContent.addEventListener('click', function (e) {
+              e.stopPropagation();
+            });
+          }
+        }
+      });
+    </script>
 </head>
 <body class="nft">
     <header>
@@ -15,9 +39,9 @@
                 <li class="dropdown">
                     <span class="dropdown-title">Projects</span>
                     <ul class="dropdown-content">
-                    <li><a href="paymentapp/index.html">Payment App</a></li>
-                        </ul>
-                    </li>
+                        <li><a href="paymentapp/index.html">Payment App</a></li>
+                    </ul>
+                </li>
                 <li><a href="cryptomeetups.html">Crypto Meet Ups</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -58,16 +82,16 @@
 
         <!-- Features Section (Two Columns) -->
         <section id="nft-features">
-    <div class="nft-features-container">
-        <h2 class="nft-features-title">NFT Utility</h2>
-        <div class="feature-content">
-            <!-- Left Column: Video -->
-            <div class="feature-image">
-                <video autoplay muted loop playsinline poster="video-poster.jpg">
-                    <source src="NFTPageImages/BILNFTCard.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            <div class="nft-features-container">
+                <h2 class="nft-features-title">NFT Utility</h2>
+                <div class="feature-content">
+                    <!-- Left Column: Video -->
+                    <div class="feature-image">
+                        <video autoplay muted loop playsinline poster="video-poster.jpg">
+                            <source src="NFTPageImages/BILNFTCard.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                     <!-- Right Column: Feature List -->
                     <ul class="feature-list">
                         <li class="feature-item">
