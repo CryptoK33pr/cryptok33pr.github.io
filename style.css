@@ -121,6 +121,10 @@ nav a {
     white-space: nowrap;
 }
 
+/* ==========================================================================
+   5. Dropdown menu for Projects 
+  ========================================================================== */
+
 /* Home page nav link color override */
 body.home nav a {
     color: #222222; /* Or whatever you want for the homepage */
@@ -136,6 +140,61 @@ body.cryptomeetups nav a {
     color: #000000; /* Update to match your design (white or any other color) */
 }
 
+/* Dropdown menu for Projects */
+nav li.dropdown {
+    position: relative;
+}
+
+/* NFT page-specific Projects menu color */
+body.nft nav li.dropdown .dropdown-title {
+    color: #ffffff; /* Replace with your desired color for the Projects menu on NFT page */
+}
+
+nav li.dropdown .dropdown-title {
+    cursor: default;
+    padding: 6px 12px;
+    color: #000000; /* Match your nav a color */
+    white-space: nowrap;
+}
+
+/* Drop Down Menu Styling*/
+nav li .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 0;
+    border-radius: 8px; /* add rounded corners */
+    border: 1px solid #ddd; /* add a subtle border */
+}
+
+nav li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav li .dropdown-content li {
+    margin: 0;
+}
+
+nav li .dropdown-content li a {
+    display: block;
+    padding: 8px 16px;
+    color: #333; /* text color */
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 14px; /* font size */
+    font-weight: normal; /* or bold */
+}
+
+nav li .dropdown-content li a:hover {
+    background: #f0f0f0;
+}
+
+
 /* ==========================================================================
    6. Home Page
    ========================================================================== */
@@ -150,7 +209,7 @@ body.cryptomeetups nav a {
     min-height: 500px;
     background:
         linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
-        url('HomePageImages/Blob.jpg');
+        url('Images/HomePage/Blob.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -467,7 +526,7 @@ body.cryptomeetups nav a {
     padding: 8rem 0;
     background:
         linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.492)),
-        url('NFTPageImages/Background3.png');
+        url('Images/NFTDrivenExperiences/Background3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -654,7 +713,7 @@ body.cryptomeetups nav a {
 }
 
 #crypto-hero {
-    background: url('MeetUpsPageImages/MeetUpsHero.png') no-repeat center center;
+    background: url('Images/HomePage/AboutImageTest.png') no-repeat center center;
     background-size: contain;
     position: relative;
     z-index: 1;
