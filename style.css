@@ -26,8 +26,8 @@
        10.1 Buttons (placeholder for future)
    11.  Footer (placeholder for future)
    12. Responsive Design
-*/
-
+   13. ReadMe Page
+   ========================================================================== */
 
 /* ==========================================================================
    1. Global Styles
@@ -209,7 +209,7 @@ nav li .dropdown-content li a:hover {
     min-height: 500px;
     background:
         linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)),
-        url('HomePageImages/Blob.jpg');
+        url('Images/HomePage/Blob.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,9 +261,9 @@ nav li .dropdown-content li a:hover {
 
 /* Enhanced button styles */
 #hero .button {
-    background-color: #ff0066;  /* ✅ Button background */
-    color: #ffffff;             /* ✅ Button text color */
-    font-size: 1rem;            /* ✅ Font size */
+    background-color: #ff0066;  /* âœ… Button background */
+    color: #ffffff;             /* âœ… Button text color */
+    font-size: 1rem;            /* âœ… Font size */
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 6px;
@@ -272,7 +272,7 @@ nav li .dropdown-content li a:hover {
 }
 
 #hero .button:hover {
-    background-color: #cc0052;  /* ✅ Hover color */
+    background-color: #cc0052;  /* âœ… Hover color */
 }
 
 /* ==========================================================================
@@ -281,30 +281,30 @@ nav li .dropdown-content li a:hover {
 
 #about {
     padding: 12rem 0;
-    background-color: #ffffff;     /* ✅ Editable background */
-    color: #000000;                /* ✅ Fallback text color */
+    background-color: #ffffff;     /* âœ… Editable background */
+    color: #000000;                /* âœ… Fallback text color */
     min-height: 500px;
     display: grid;
     place-items: center;
 }
 
 #about .about-text h2 {
-    color: #222222;                /* ✅ Editable heading color */
-    font-size: 1.5rem;               /* ✅ Editable heading font size */
+    color: #222222;                /* âœ… Editable heading color */
+    font-size: 1.5rem;               /* âœ… Editable heading font size */
     margin-bottom: 1rem;
 }
 
 #about .about-text p {
-    color: #222222;                /* ✅ Editable paragraph color */
-    font-size: 1rem;           /* ✅ Editable paragraph font size */
+    color: #222222;                /* âœ… Editable paragraph color */
+    font-size: 1rem;           /* âœ… Editable paragraph font size */
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
 #about .button {
-    background-color: #ff0066;     /* ✅ Editable button background */
-    color: #ffffff;                /* ✅ Editable button text color */
-    font-size: 1rem;               /* ✅ Editable button font size */
+    background-color: #ff0066;     /* âœ… Editable button background */
+    color: #ffffff;                /* âœ… Editable button text color */
+    font-size: 1rem;               /* âœ… Editable button font size */
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 6px;
@@ -313,7 +313,7 @@ nav li .dropdown-content li a:hover {
 }
 
 #about .button:hover {
-    background-color: #cc0052;     /* ✅ Editable hover color */
+    background-color: #cc0052;     /* âœ… Editable hover color */
 }
 
 .about-content {
@@ -347,20 +347,20 @@ nav li .dropdown-content li a:hover {
 
 #cryptomeetups {
     padding: 12rem 0;
-    background-color: #ffffff;  /* ✅ Easily editable background color */
-    color: #000000;             /* ✅ Easily editable default text color */
+    background-color: #ffffff;  /* âœ… Easily editable background color */
+    color: #000000;             /* âœ… Easily editable default text color */
 }
 
 /* Targeting specific text styles within the Crypto Meetups section */
 #cryptomeetups h2 {
-    color: #222222;             /* ✅ Heading color */
-    font-size: 1.5rem;            /* ✅ Adjustable font size */
+    color: #222222;             /* âœ… Heading color */
+    font-size: 1.5rem;            /* âœ… Adjustable font size */
     margin-bottom: 1rem;
 }
 
 #cryptomeetups p {
-    color: #222222;             /* ✅ Paragraph text color */
-    font-size: 1rem;        /* ✅ Adjustable font size */
+    color: #222222;             /* âœ… Paragraph text color */
+    font-size: 1rem;        /* âœ… Adjustable font size */
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -525,8 +525,8 @@ nav li .dropdown-content li a:hover {
 #nft-features {
     padding: 8rem 0;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.492)),
-        url('NFTPageImages/Background3.png');
+        linear-gradient(rgba(0, 0, 0, 0.566), rgb(0, 0, 0)),
+        url('Images/NFTDrivenExperiences/Background3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -713,7 +713,7 @@ nav li .dropdown-content li a:hover {
 }
 
 #crypto-hero {
-    background: url('MeetUpsPageImages/MeetUpsHero.png') no-repeat center center;
+    background: url('Images/HomePage/AboutImageTest.png') no-repeat center center;
     background-size: contain;
     position: relative;
     z-index: 1;
@@ -908,7 +908,7 @@ nav li .dropdown-content li a:hover {
     padding: 0.75rem 1.12rem;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem; /* 👈 Add this line to control text size */
+    font-size: 1rem; /* ðŸ‘ˆ Add this line to control text size */
     font-weight: 50; /* Optional: makes text bolder */
     transition: background-color 0.3s ease;
 }
@@ -959,4 +959,110 @@ footer {
   nav a {
     word-break: keep-all;
   }
+}
+
+/* ==========================================================================
+   13. ReadMe Page
+   ========================================================================== */
+
+.readme-section,
+body.readme main,
+body.readme section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+/* Header styles for ReadMe section */
+.readme-section h1,
+body.readme h1 {
+    color: #ff0066;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.readme-section h2,
+body.readme h2 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.readme-section h3,
+body.readme h3 {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-weight: 700; /* or 'bold' */
+}
+
+/* Paragraphs */
+.readme-section p,
+body.readme p {
+    color: #222;
+    font-size: .9rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Lists */
+.readme-section ul,
+body.readme ul {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    padding-left: 1.2rem;
+}
+
+.readme-section li,
+body.readme li {
+    margin-bottom: 0.7rem;
+    font-size: .9rem;
+    line-height: 1.6;
+    list-style: disc outside;
+}
+
+.readme-section li strong,
+body.readme li strong {
+    color: #ff0066;
+    font-weight: 600;
+}
+
+/* Links */
+.readme-section a,
+body.readme a {
+    color: #0032e6;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .readme-section,
+    body.readme main,
+    body.readme section {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .readme-section h1,
+    body.readme h1 {
+        font-size: 1.4rem;
+    }
+    .readme-section h2,
+    body.readme h2 {
+        font-size: 1.15rem;
+    }
+    .readme-section h3,
+    body.readme h3 {
+        font-size: 1rem;
+    }
 }
