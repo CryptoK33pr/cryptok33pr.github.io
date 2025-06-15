@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Blockchain Innovation Lab</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+      // Dropdown: Touch/click support for Projects menu
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownTitle = document.querySelector('.dropdown-title');
+        var dropdown = document.querySelector('.dropdown');
+        if (dropdownTitle && dropdown) {
+          dropdownTitle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dropdown.classList.toggle('open');
+          });
+          // Close dropdown when clicking outside
+          document.addEventListener('click', function () {
+            dropdown.classList.remove('open');
+          });
+          // Prevent closing when clicking inside dropdown
+          var dropdownContent = dropdown.querySelector('.dropdown-content');
+          if (dropdownContent) {
+            dropdownContent.addEventListener('click', function (e) {
+              e.stopPropagation();
+            });
+          }
+        }
+      });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nft.html">NFT-Driven Experience</a></li>
+                <li class="dropdown">
+                    <span class="dropdown-title" tabindex="0" aria-haspopup="true" aria-expanded="false">Projects</span>
+                    <ul class="dropdown-content" aria-label="submenu">
+                        <li><a href="paymentapp/index.html">Payment App</a></li>
+                    </ul>
+                </li>
+                <li><a href="meetups.html">Meet Ups</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about-hero">
+            <div class="about-hero-content">
+                <h1>Blockchain Innovation Lab</h1>
+                <p></p>
+            </div>
+        </section>
+
+        <!-- About Content Section -->
+        <section id="about-content">
+            <div class="about-columns">
+                <div class="about-text">
+                    <h2>Ari McCarthy</h2>
+                    <p>
+                        Recognizing the evolving landscape where technology reshapes how we connect and engage, Blockchain Innovation Lab is dedicated to merging creative vision with cutting-edge digital solutions. We specialize in Non-Fungible Tokens (NFTs), harnessing their power to create unique, ownable experiences that bridge the gap between the virtual and physical worlds, fostering deeper engagement and lasting value for our clients and their audiences.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="Images/AboutPage/Me.png" alt="Blockchain Innovation Lab Team" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Blockchain Innovation Lab</p>
+    </footer>
+</body>
+</html>
