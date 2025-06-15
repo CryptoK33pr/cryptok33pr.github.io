@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Innovation Lab</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script>
+    // Dropdown: Touch/click support for Projects menu
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdownTitle = document.querySelector('.dropdown-title');
+      var dropdown = document.querySelector('.dropdown');
+      if (dropdownTitle && dropdown) {
+        dropdownTitle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          dropdown.classList.toggle('open');
+        });
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function () {
+          dropdown.classList.remove('open');
+        });
+        // Prevent closing when clicking inside dropdown
+        var dropdownContent = dropdown.querySelector('.dropdown-content');
+        if (dropdownContent) {
+          dropdownContent.addEventListener('click', function (e) {
+            e.stopPropagation();
+          });
+        }
+      }
+    });
+  </script>
+</head>
+<body class="home">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/home/">Home</a></li>
+        <li><a href="/nft/">NFT-Driven Experience</a></li>
+        <li class="dropdown">
+          <span class="dropdown-title" tabindex="0" aria-haspopup="true" aria-expanded="false">Projects</span>
+          <ul class="dropdown-content" aria-label="submenu">
+            <li><a href="/paymentapp/index.html">Payment App</a></li>
+          </ul>
+        </li>
+        <li><a href="/meetups/">Meet Ups</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Blockchain Innovation Lab</h1>
+        <h2>Let's put it on the blockchain</h2>
+        <p>
+          Dive into the world of NFTs and discover how digital assets are transforming the way we <br />
+          create, explore, and connect like never before.
+        </p>
+        <a href="/nft/" class="button">NFT-Driven Experience</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>
+            Unlock the future of blockchain technology with us. We’re passionate about making the
+            ecosystem clear, accessible, and empowering for everyone. Join us as we help you
+            explore, build, and thrive in the world of digital innovation.
+          </p>
+          <a href="/about/" class="button">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="/HomePageImages/HomePageMeetupsPic.png" alt="About Us Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Crypto Meetups Section -->
+    <section id="cryptomeetups">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Meetups</h2>
+          <p>
+            Join our monthly crypto meetups in the heart of Jersey City. Let's learn, build, and grow together!
+          </p>
+          <a href="/meetups/" class="button">Join Us</a>
+        </div>
+        <div class="about-image">
+          <img src="/HomePageImages/AboutImageTest.png" alt="About Us Image" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Blockchain Innovation Lab</p>
+  </footer>
+</body>
+</html>
